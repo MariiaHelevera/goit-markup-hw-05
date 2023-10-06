@@ -408,7 +408,7 @@
   <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
-          <svg class="close-button-icon" width="24px" height="24px">
+          <svg class="close-btn-icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -446,10 +446,14 @@
             <label class="form-label" for="comment">Comment</label>
             <textarea class="form-input form-comment" id="comment" name="comment" placeholder="Text input"></textarea>
           </div>
-          <div class="modal-field">
-            <input class="input-check" type="checkbox" id="policy" name="policy" value="yes" required>
-            <label class="policy-text" for="policy"><span class="input-check-box"></span>I accept the terms and conditions of the
-              <a class="policy-modal-link" href="">Privacy Policy</a>
+          <div class="modal-field policy-check-container">
+            <input class="input-check visually-hidden" type="checkbox" id="policy" name="policy" value="accept" required >
+            <label class="policy-text" for="policy">
+              <span class="input-check-box">
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>I accept the terms and conditions of the&nbsp;<a class="policy-modal-link" href="">Privacy Policy</a>
             </label>
           </div>
 
